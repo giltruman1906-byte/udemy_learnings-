@@ -1,6 +1,22 @@
 ##################### Extra Hard Starting Project ######################
+import pandas as pd 
+import datetime as dt
+
+now = dt.datetime.now()
+data =  pd.read_csv("birthday project - Sheet1.csv")
+df = pd.DataFrame(data)
+print(df["birthday date"])
+
+
+# with open("birthday project - Sheet1.csv" ,"r") as f:
+#     text = f.read()
+# for name in text ["name"]:
+#     print(name)
+
 
 # 1. Update the birthdays.csv
+
+
 
 # 2. Check if today matches a birthday in the birthdays.csv
 
