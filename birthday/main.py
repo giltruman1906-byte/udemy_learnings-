@@ -33,6 +33,7 @@ now = dt.datetime.now()
 today_date = dt.date.today()
 records = df[["name", "birthday date"]].to_dict("records")
 
+today_date = '1999-04-05'
 for r in records:
     if r["birthday date"] == today_date:
         new_name = r["name"]  
